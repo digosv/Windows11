@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+:root {
+  --bgimage: url(./assets/win11white.jpg);
+  --fontcolor: #000000;
+  --barcolor: #dfdbdb;
+  --opacity: 0.9;
+  --iconscolor: #000000;
+}
+
+.dark {
+  --bgimage: url(./assets/win11black.jpg);
+  --fontcolor: #ffff;
+  --barcolor: #050d1f;
+  --opacity: 0.9;
+  --iconscolor: #ffff;
+}
+
+/* BackGround e Barra */
+
+body {
+  background-image: var(--bgimage);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+.barra {
+  background-color: var(--barcolor);
+  width: 100vw;
+  height: 6vh;
+  position: absolute;
+  bottom: 0;
+  opacity: var(--opacity);
+}
+
+/* Botões */
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 6vh;
+}
+
+.buttons button {
+  background-color: var(--barcolor);
+  color: var(--iconscolor);
+  border: none;
+  width: 2vw;
+  height: 3.2vh;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 26px;
+}
+
