@@ -1,39 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Windows 11</title>
     <link rel="stylesheet" href="./style.css" />
+    <title>Windows 11</title>
   </head>
   <body>
-    <footer class="barra">
-      <div class="buttons">
-        <button id="winicon"><ion-icon name="logo-windows"></ion-icon></button>
-        <button id="searchicon">
-          <ion-icon name="search-outline"></ion-icon>
-        </button>
-        <button id="exploreicon">
-          <ion-icon name="folder-outline"></ion-icon>
-        </button>
-        <button id="edgeicon"><ion-icon name="logo-edge"></ion-icon></button>
-        <button id="spotifyicon">
-          <ion-icon name="musical-notes-outline"></ion-icon>
-        </button>
-        <button onclick="" id="darkwhitemode">
-          <ion-icon onclick="toggleMode()" name="contrast-outline"></ion-icon>
-        </button>
-      </div>
-    </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-
+    <div class="taskbar">
+      <button class="winbutton">
+        <img src="./assets/windowsicon.png" alt="" />
+      </button>
+      <button class="searchbutton">
+        <img src="./assets/searchicon.png" alt="" />
+      </button>
+      <button class="edgebutton">
+        <img src="./assets/edgeicon.png" alt="" />
+      </button>
+      <button class="explorebutton">
+        <img src="./assets/explorericon.png" alt="" />
+      </button>
+      <button class="spotifybutton">
+        <img src="./assets/spotifyicon.png" alt="" />
+      </button>
+    </div>
+    <div class="winmenu"><img src="./assets/startmenu.PNG" alt="" /></div>
+    <div class="spotifymenu"><img src="./assets/spotify.png" alt="" /></div>
     <script src="./script.js"></script>
   </body>
 </html>
